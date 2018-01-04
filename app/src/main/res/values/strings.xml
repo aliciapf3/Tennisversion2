@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Roland Garros Men\'s Final</string>
+    <string name="name_player_1">Roger Federer</string>
+    <string name="name_player_2">Rafael Nadal</string>
+    <string name="new_game_button">New Game</string>
+    <string name="ace_button">Ace</string>
+    <string name="first_serve_button">First Serve</string>
+    <string name="second_serve_button">Second Serve</string>
+</resources>
