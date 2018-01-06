@@ -31,7 +31,7 @@
                 android:padding="4dp"
                 android:text="@string/name_player_1"
                 android:textStyle="bold"
-                android:textColor="#FDFEFE"
+                android:textColor="@color/blanco"
                 android:textSize="20sp" />
 
 
@@ -43,9 +43,9 @@
                 android:gravity="center"
                 android:padding="4dp"
                 android:text="0"
-                android:textColor="#FDFEFE"
+                android:textColor="@color/blanco"
                 android:textStyle="bold"
-                android:textSize="36sp" />
+                android:textSize="38sp" />
 
             <Button
                 android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                 android:layout_marginTop="8dp"
                 android:onClick="addAceForRogerFederer"
                 android:text="@string/ace_button"
-                android:textColor="#FDFEFE" />
+                android:textColor="@color/blanco" />
 
             <Button
                 android:layout_width="match_parent"
@@ -65,7 +65,7 @@
                 android:layout_marginTop="8dp"
                 android:onClick="addFirstServeForRogerFederer"
                 android:text="@string/first_serve_button"
-                android:textColor="#FDFEFE" />
+                android:textColor="@color/blanco" />
 
             <Button
                 android:layout_width="match_parent"
@@ -75,14 +75,14 @@
                 android:layout_marginTop="8dp"
                 android:onClick="addSecondServeForRogerFederer"
                 android:text="@string/second_serve_button"
-                android:textColor="#FDFEFE" />
+                android:textColor="@color/blanco" />
         </LinearLayout>
 
 
         <View
             android:layout_width="3dp"
             android:layout_height="match_parent"
-            android:layout_marginBottom="60dp"
+            android:layout_marginBottom="70dp"
             android:layout_marginTop="0dp"
             android:background="#FDFEFE" />
 
@@ -106,7 +106,7 @@
                 android:padding="4dp"
                 android:text="@string/name_player_2"
                 android:textStyle="bold"
-                android:textColor="#FDFEFE"
+                android:textColor="@color/blanco"
                 android:textSize="20sp" />
 
             <TextView
@@ -117,9 +117,11 @@
                 android:gravity="center"
                 android:padding="4dp"
                 android:text="0"
-                android:textColor="#FDFEFE"
+                android:textColor="@color/blanco"
                 android:textStyle="bold"
-                android:textSize="36sp" />
+                android:textSize="38sp" />
+
+
 
             <Button
                 android:layout_width="match_parent"
@@ -129,7 +131,7 @@
                 android:layout_marginTop="8dp"
                 android:onClick="addAceForRafaelNadal"
                 android:text="@string/ace_button"
-                android:textColor="#FDFEFE" />
+                android:textColor="@color/blanco" />
 
             <Button
                 android:layout_width="match_parent"
@@ -139,7 +141,7 @@
                 android:layout_marginTop="8dp"
                 android:onClick="addFirstServeForRafaelNadal"
                 android:text="@string/first_serve_button"
-                android:textColor="#FDFEFE" />
+                android:textColor="@color/blanco" />
 
             <Button
                 android:layout_width="match_parent"
@@ -149,7 +151,7 @@
                 android:layout_marginTop="8dp"
                 android:onClick="addSecondServeForRafaelNadal"
                 android:text="@string/second_serve_button"
-                android:textColor="#FDFEFE" />
+                android:textColor="@color/blanco" />
         </LinearLayout>
 
     </LinearLayout>
@@ -163,7 +165,7 @@
         android:layout_marginBottom="16dp"
         android:onClick="resetScore"
         android:text="@string/new_game_button"
-        android:textColor="#FDFEFE" />
+        android:textColor="@color/blanco" />
 
 
 </RelativeLayout>

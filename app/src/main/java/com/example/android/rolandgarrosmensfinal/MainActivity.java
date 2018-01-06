@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
     int counterRogerFederer = 0;
     int counterRafaelNadal = 0;
 
+    String advantageRogerFederer = "AD";
+    String advantageRafaelNadal = "AD";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,14 +29,18 @@ public class MainActivity extends AppCompatActivity {
         if (counterRogerFederer == 0) {
             scoreRogerFederer = scoreRogerFederer + 15;
         }
-        else if(counterRogerFederer == 1) {
+        else if (counterRogerFederer == 1) {
             scoreRogerFederer = scoreRogerFederer + 15;
         }
-        else if(counterRogerFederer == 2) {
+        else if (counterRogerFederer == 2) {
             scoreRogerFederer = scoreRogerFederer + 10;
         }
-            counterRogerFederer = counterRogerFederer + 1;
-            displayForRogerFederer(scoreRogerFederer);
+        else if (counterRogerFederer == 3) {
+            displayForRogerFedererAD("AD");
+            return;
+        }
+        counterRogerFederer = counterRogerFederer + 1;
+        displayForRogerFederer(scoreRogerFederer);
 
     }
 
@@ -47,15 +53,16 @@ public class MainActivity extends AppCompatActivity {
 
         if (counterRogerFederer == 0) {
             scoreRogerFederer = scoreRogerFederer + 15;
-        }
-        else if(counterRogerFederer == 1) {
+        } else if (counterRogerFederer == 1) {
             scoreRogerFederer = scoreRogerFederer + 15;
-        }
-        else if(counterRogerFederer == 2) {
+        } else if (counterRogerFederer == 2) {
             scoreRogerFederer = scoreRogerFederer + 10;
+        } else if (counterRogerFederer == 3) {
+            displayForRogerFedererAD("AD");
+            return;
         }
-            counterRogerFederer = counterRogerFederer + 1;
-            displayForRogerFederer(scoreRogerFederer);
+        counterRogerFederer = counterRogerFederer + 1;
+        displayForRogerFederer(scoreRogerFederer);
 
     }
 
@@ -66,18 +73,18 @@ public class MainActivity extends AppCompatActivity {
     public void addSecondServeForRogerFederer(View v) {
         if (counterRogerFederer == 0) {
             scoreRogerFederer = scoreRogerFederer + 15;
-        }
-        else if(counterRogerFederer == 1) {
+        } else if (counterRogerFederer == 1) {
             scoreRogerFederer = scoreRogerFederer + 15;
-        }
-        else if(counterRogerFederer == 2) {
+        } else if (counterRogerFederer == 2) {
             scoreRogerFederer = scoreRogerFederer + 10;
-        }
-            counterRogerFederer = counterRogerFederer + 1;
-            displayForRogerFederer(scoreRogerFederer);
+        } else if (counterRogerFederer == 3) {
+        displayForRogerFedererAD("AD");
+        return;
+    }
+        counterRogerFederer = counterRogerFederer + 1;
+        displayForRogerFederer(scoreRogerFederer);
 
     }
-
 
 
     /**
@@ -85,16 +92,17 @@ public class MainActivity extends AppCompatActivity {
      */
     public void addAceForRafaelNadal(View v) {
         if (counterRafaelNadal == 0) {
-            scoreRafaelNadal = scoreRafaelNadal+ 15;
-        }
-        else if(counterRafaelNadal == 1) {
             scoreRafaelNadal = scoreRafaelNadal + 15;
-        }
-       else if(counterRafaelNadal == 2) {
+        } else if (counterRafaelNadal == 1) {
+            scoreRafaelNadal = scoreRafaelNadal + 15;
+        } else if (counterRafaelNadal == 2) {
             scoreRafaelNadal = scoreRafaelNadal + 10;
-        }
-            counterRafaelNadal = counterRafaelNadal + 1;
-            displayForRafaelNadal(scoreRafaelNadal);
+        } else if (counterRogerFederer == 3) {
+            displayForRafaelNadalAD("AD");
+        return;
+    }
+        counterRafaelNadal = counterRafaelNadal + 1;
+        displayForRafaelNadal(scoreRafaelNadal);
 
     }
 
@@ -105,18 +113,18 @@ public class MainActivity extends AppCompatActivity {
     public void addFirstServeForRafaelNadal(View v) {
         if (counterRafaelNadal == 0) {
             scoreRafaelNadal = scoreRafaelNadal + 15;
-        }
-        else if(counterRafaelNadal == 1) {
+        } else if (counterRafaelNadal == 1) {
             scoreRafaelNadal = scoreRafaelNadal + 15;
-        }
-        else if(counterRafaelNadal == 2) {
+        } else if (counterRafaelNadal == 2) {
             scoreRafaelNadal = scoreRafaelNadal + 10;
+        }else if (counterRogerFederer == 3) {
+            displayForRafaelNadalAD("AD");
+            return;
         }
-            counterRafaelNadal = counterRafaelNadal + 1;
-            displayForRafaelNadal(scoreRafaelNadal);
+        counterRafaelNadal = counterRafaelNadal + 1;
+        displayForRafaelNadal(scoreRafaelNadal);
 
     }
-
 
 
     /**
@@ -125,16 +133,17 @@ public class MainActivity extends AppCompatActivity {
     public void addSecondServeForRafaelNadal(View v) {
         if (counterRafaelNadal == 0) {
             scoreRafaelNadal = scoreRafaelNadal + 15;
-        }
-        else if(counterRafaelNadal == 1) {
+        } else if (counterRafaelNadal == 1) {
             scoreRafaelNadal = scoreRafaelNadal + 15;
-        }
-        else if (counterRafaelNadal == 2) {
+        } else if (counterRafaelNadal == 2) {
             scoreRafaelNadal = scoreRafaelNadal + 10;
+        }else if (counterRogerFederer == 3) {
+            displayForRafaelNadalAD("AD");
+            return;
         }
 
-            counterRafaelNadal = counterRafaelNadal + 1;
-            displayForRafaelNadal(scoreRafaelNadal);
+        counterRafaelNadal = counterRafaelNadal + 1;
+        displayForRafaelNadal(scoreRafaelNadal);
 
     }
 
@@ -143,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when New Game button is pressed
      */
 
-    public void resetScore (View v) {
+    public void resetScore(View v) {
         scoreRogerFederer = 0;
         scoreRafaelNadal = 0;
         counterRogerFederer = 0;
@@ -167,7 +176,16 @@ public class MainActivity extends AppCompatActivity {
     public void displayForRafaelNadal(int score) {
         TextView scoreView = (TextView) findViewById(R.id.rafael_nadal_score);
         scoreView.setText(String.valueOf(score));
+
     }
 
+    public void displayForRogerFedererAD(String advantageRogerFederer) {
+        TextView scoreView = (TextView) findViewById(R.id.roger_federer_score);
+        scoreView.setText(String.valueOf(advantageRogerFederer));
+    }
 
+    public void displayForRafaelNadalAD(String advantageRafaelNadal) {
+        TextView scoreView = (TextView) findViewById(R.id.rafael_nadal_score);
+        scoreView.setText(String.valueOf(advantageRafaelNadal));
+    }
 }
